@@ -26,3 +26,11 @@ const images = [
 let nextBtn = document.getElementById('prev');
 let prevBtn = document.getElementById('next');
 
+// titolo e testo dal dom
+let text = document.getElementById('text');
+let title = document.getElementById('title');
+let currentImg = 1;
+
+// Recupero il contenitore dello slider
+let img_slide = document.getElementById('img_slide');
+console.log(images[currentImg].image)
