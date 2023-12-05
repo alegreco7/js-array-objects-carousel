@@ -34,3 +34,17 @@ let currentImg = 1;
 // Recupero il contenitore dello slider
 let img_slide = document.getElementById('img_slide');
 console.log(images[currentImg].image)
+
+// contatori ++ & --
+prevBtn.addEventListener('click', function(){
+    if(currentImg == 0){
+        currentImg = 4;
+    }
+    let img = `<img src="./${images[currentImg].image}" alt="${images[currentImg].title}">`
+    let div = `<div class='position-absolute bottom-50 text-right color-white padding-text'><h2>${images[currentImg].title}</h2><h5>${images[currentImg].text}</h5></div>`
+    img_slide.innerHTML = img + div;
+    
+    console.log(currentImg);
+    console.log(images[currentImg].image)
+    currentImg--;
+});
